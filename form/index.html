@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		var login = $('.log input[type="text"]');
+		var loginLabel = $('label[for="login"]');
+		$('.for-btn input[type="submit"]').click(function() {
+			if (login.val() == '') {
+				loginLabel.addClass('red-text');
+				login.addClass('red-border');
+			} else {
+				$('.container').css('display', 'none');
+				$('body').append('<h1 class="hello">Hello '+login.val()+'!</h1>');
+				$('.hello').css({
+					'margin-top': '200px',
+					'text-align': 'center'
+				});
+				login.removeClass('red-border');
+				loginLabel.removeClass('red-text');
+			}
+		});
+		$('.close').click(function() {
+			$('.container').css('display', 'none');
+		});
+	});
+	</script>
+	<!--[if lt IE 9]> <script src="//html5shiv.
+	googlecode.com/ svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--[if lte IE 7]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+	<div class="container">
+		<header>
+			<img src="img/close.png" alt="" class="close">
+			<h1>Log in to the Site</h1>
+		</header>
+		<div class="content">
+			<div class="c-block log">
+				<form action="#">
+					<label for="login">Login</label>
+					<input type="text" class="field" id="login">
+					<label for="password">Password</label>
+					<input type="password" class="field" id="password">
+					<input type="checkbox" id="check"> 
+					<label for="check">Remember me</label>
+					<div class="for-btn">
+						<input type="submit" value="Log in">
+						<a href="#">Need help logging in?</a>
+						<div class="clear"></div>
+					</div>
+				</form>
+			</div>
+			<div class="c-block social">
+				<a href="" class="fb">Log in with Facebook</a>
+				<a href="" class="gp">Log in with Google +</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<footer>
+			<p>Dont have an account yet? <a href="#">Sign up</a></p>
+		</footer>
+	</div>
+</body>
+</html>

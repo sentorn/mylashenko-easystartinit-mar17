@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #85ff7f;
+}
+
+.b {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ffbb49;
+}
+
+.top {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.right {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.left {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #85ff7f;
+}
+
+.b {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ffbb49;
+}
+
+.left-top {
+    top: 0;
+    right: 100%;
+    margin-right: 20px;
+}
+
+.right-top {
+    top: 0;
+    left: 100%;
+    margin-left: 20px;
+}
+
+.left-bottom {
+    bottom: 0;
+    right: 100%;
+    margin-right: 20px;
+}
+
+.right-bottom {
+    bottom: 0;
+    left: 100%;
+    margin-left: 20px;
+}
