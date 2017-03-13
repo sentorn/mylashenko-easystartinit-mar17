@@ -28,10 +28,6 @@ a:hover {
 	clear: both;
 }
 
-.red-border {
-	border-color: #bf0c00 !important;
-}
-
 .red-text {
 	color: #bf0c00;
 }
@@ -96,6 +92,10 @@ header h1 {
 	border: 1px solid #ddd;
 	-webkit-border-radius: 4px;
 	        border-radius: 4px;
+}
+
+.log .red-border {
+	border-color: #bf0c00;
 }
 
 .log input[type='checkbox'] {
